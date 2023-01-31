@@ -29,13 +29,36 @@ namespace Data_Analysis
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.axKHOpenAPI1 = new AxKHOpenAPILib.AxKHOpenAPI();
+            ((System.ComponentModel.ISupportInitialize)(this.axKHOpenAPI1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // axKHOpenAPI1
+            // 
+            this.axKHOpenAPI1.Enabled = true;
+            this.axKHOpenAPI1.Location = new System.Drawing.Point(461, 168);
+            this.axKHOpenAPI1.Name = "axKHOpenAPI1";
+            this.axKHOpenAPI1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axKHOpenAPI1.OcxState")));
+            this.axKHOpenAPI1.Size = new System.Drawing.Size(203, 112);
+            this.axKHOpenAPI1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.axKHOpenAPI1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.axKHOpenAPI1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private AxKHOpenAPILib.AxKHOpenAPI axKHOpenAPI1;
     }
 }
 
